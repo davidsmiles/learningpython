@@ -15,6 +15,16 @@ print(present_friends)
 # -- Dictionary comprehension --
 # Works just like set comprehension, but you need to do key-value pairs.
 
+users = [
+    (0, 'David', '12345'),
+    (1, 'Jose', '1234'),
+    (2, 'Jen', '123'),
+    (3, 'Anne', '12'),
+]
+
+users = {user[1]: user for user in users}
+print(users['David'])
+
 friends = ["Rolf", "Bob", "Jen", "Anne"]
 time_since_seen = [3, 7, 15, 11]
 
@@ -25,3 +35,4 @@ long_timers = {
 }
 
 print(long_timers)
+
