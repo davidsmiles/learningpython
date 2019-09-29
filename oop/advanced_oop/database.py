@@ -8,7 +8,7 @@ class Database:
 
     @classmethod
     def remove(cls, finder):    # lambda x: x['username'] == 'Rolf'
-        cls.content = [user for user in cls.content if not finder(user)]
+        cls.content = [user for user in cls.content["users"] if not finder(user)]
 
     @classmethod
     def find(cls, finder):
